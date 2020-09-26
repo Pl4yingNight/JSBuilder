@@ -1,0 +1,22 @@
+#jsb-sandbox{
+    height: 100%;
+    width: 70%;
+    float: left;
+}
+#jsb-toolbox{
+    height: 100%;
+    width: 30%;
+    float: left;
+}
+.jsb-toolbox-section{
+    margin-bottom: 20px;
+}
+.jsb-toolbox-section-title{
+    color: cornflowerblue;
+}
+.jsb-box{
+    height: 50px;
+    width: 200px;
+    border: 1px solid black;
+    draggable: true;
+}

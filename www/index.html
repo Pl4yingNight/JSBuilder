@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">  
+    <head>
+        <title>JSBuilder Example</title>
+        <link rel="stylesheet" href="css/base.css">
+    </head>
+    <body>
+        <span>
+            <h1>JSBuilder Example</h1>
+        </span>
+        <div id="jsb-sandbox">Sandbox</div>
+        <div id="jsb-toolbox">Toolbox</div>
+        <script type="module">
+            import {Sandbox, Toolbox} from '../src/jsbuilder.js';
+    
+            const sandbox = new Sandbox();
+            const toolbox = new Toolbox();
+    
+            toolbox.setTemplates([
+                {
+                    'name': 'small-house',
+                    'title': 'Small House',
+            'type': 'houses',
+                    'canContain':[
+                        {
+                            'type': 'animal',
+                            'amount': 2
+                        }
+                    ]
+                },
+                {
+                    'name': 'big-house',
+                    'title': 'Big House',
+            'type': 'houses',
+                    'canContain':[
+                        {
+                            'type': 'animal',
+                            'amount': 5
+                        }
+                    ]
+                },
+                {
+                    'name': 'cat',
+                    'title': 'Cat',
+                    'type': 'animal'
+                },
+                {
+                    'name': 'dog',
+                    'title': 'Dog',
+                    'type': 'animal'
+                }
+            ]);
+        </script>
+    </body>
+</html>
